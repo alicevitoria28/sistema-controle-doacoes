@@ -69,108 +69,87 @@ sistema-controle-doacoes/
 ├── screenshots/             # Capturas de tela da aplicação
 └── README.md                # Documentação do projeto
 
-## ⚙️ Como executar
+## ⚙️ Como Executar
 
-### Pré-requisitos
+### 📋 Pré-requisitos
+Antes de executar o projeto, certifique-se de ter instalado em sua máquina:
+- 🐍 Python 3.x
+- 🔧 Git
 
-Antes de executar o projeto, certifique-se de ter instalado:
+---
 
-- Python 3
-- Git
+### 🚀 Passo a Passo
 
-### 1. Clone o repositório
-
-```bash
+1️⃣ **Clone o repositório:**
 git clone https://github.com/alicevitoria28/sistema-controle-doacoes.git
 
-### 2. Acesse a pasta do projeto
+2️⃣ **Acesse a pasta do projeto:**
 cd sistema-controle-doacoes
-### 3. Crie um ambiente virtual
 
-No Windows:
-
+3️⃣ **Crie um ambiente virtual:**
 py -m venv .venv
 
-### 4. Ative o ambiente virtual
-
-No Windows PowerShell:
-
+4️⃣ **Ative o ambiente virtual (Windows PowerShell):**
 .venv\Scripts\activate
+*(Após a ativação, o terminal deverá apresentar (.venv) no início da linha)*
 
-Após a ativação, o terminal deverá apresentar (.venv) no início da linha.
-
-### 5. Instale as dependências
+5️⃣ **Instale as dependências:**
 pip install -r requirements.txt
+*(Principais dependências: ttkbootstrap, bcrypt, openpyxl)*
 
-As principais dependências utilizadas pelo projeto são:
-
-ttkbootstrap
-bcrypt
-openpyxl
-
-### 6. Execute a aplicação
+6️⃣ **Execute a aplicação:**
 py main.py
 
-### 💾 Banco de dados
+---
 
-A aplicação utiliza SQLite para armazenamento local das informações relacionadas às doações.
+## 🗄️ Detalhes Arquiteturais
 
-Os arquivos de banco de dados são ignorados pelo Git por meio do arquivo .gitignore, evitando que bancos de dados locais sejam enviados para o repositório.
+### 💾 Banco de Dados
+A aplicação utiliza **SQLite** para armazenamento local das informações relacionadas às doações. Os arquivos do banco de dados são ignorados pelo Git via `.gitignore`, evitando que dados locais sejam enviados ao repositório público.
 
 ### 🔐 Segurança
+O projeto utiliza a biblioteca **bcrypt** para realizar o hash das senhas dos usuários, garantindo que informações confidenciais não sejam armazenadas em texto puro no sistema.
 
-O projeto utiliza a biblioteca bcrypt para realizar o hash das senhas dos usuários.
+### 📊 Exportação de Dados
+O sistema possui a funcionalidade de exportação de relatórios para planilhas em formato Excel, utilizando a biblioteca **OpenPyXL**.
 
-Dessa forma, as senhas não precisam ser armazenadas diretamente em texto puro no sistema.
+### 🎨 Interface Gráfica
+Desenvolvida utilizando **Tkinter** em conjunto com **ttkbootstrap**, a interface oferece componentes visuais modernos, incluindo suporte à alternância de temas visuais (claro/escuro).
 
-### 📊 Exportação de dados
+---
 
-O sistema possui funcionalidade de exportação de informações para arquivos Excel.
+## 🎓 Objetivos de Aprendizado
 
-Para essa funcionalidade, é utilizada a biblioteca OpenPyXL.
+Este projeto foi desenvolvido com o objetivo de praticar e consolidar conceitos como:
 
-### 🎨 Interface
+- 🐍 Programação em Python e POO
+- 💻 Desenvolvimento de aplicações desktop
+- 🎨 Criação e estilização de interfaces gráficas
+- 🏗️ Organização de arquitetura de código
+- 🗄️ Integração e manipulação de banco de dados SQLite
+- 🔐 Autenticação de usuários e criptografia de senhas
+- 📊 Manipulação de arquivos e exportação de dados
+- 📦 Gerenciamento de dependências e ambiente virtual
+- 🔧 Controle de versão com Git e GitHub
 
-A aplicação possui uma interface gráfica desenvolvida em Python utilizando Tkinter e ttkbootstrap.
+---
 
-O projeto também possui suporte à alteração do tema da interface, permitindo uma experiência visual personalizada.
+## 🚧 Próximas Melhorias
 
-### 🎓 Objetivos de aprendizado
+- [ ] Implementação de testes automatizados
+- [ ] Melhorias na validação de campos e formulários
+- [ ] Sistema com diferentes níveis de acesso (Admin / Usuário)
+- [ ] Relatórios e gráficos analíticos mais completos
+- [ ] Aprimoramentos na experiência do usuário (UX)
+- [ ] Ampliação das funcionalidades de gerenciamento e filtros
 
-Este projeto foi desenvolvido com o objetivo de colocar em prática conhecimentos relacionados a:
+---
 
-- Programação em Python
-- Desenvolvimento de aplicações desktop
-- Criação de interfaces gráficas
-- Organização de código
-- Banco de dados SQLite
-- Autenticação de usuários
-- Hash de senhas
-- Manipulação de arquivos
-- Exportação de dados
-- Gerenciamento de dependências
-- Controle de versão com Git
-- Utilização do GitHub
+## 👩‍💻 Desenvolvedora
 
-### 🚧 Próximas melhorias
+**Alice Vitória**  
+Estudante de Sistemas de Informação, apaixonada por desenvolvimento de software, programação e tecnologia.
 
-Algumas melhorias que podem ser implementadas futuramente:
+---
 
-- Implementação de testes automatizados
-- Melhorias na validação dos dados
-- Sistema de diferentes níveis de acesso
-- Relatórios mais completos
-- Melhorias na experiência do usuário
-- Aprimoramento da interface
-- Documentação técnica mais detalhada
-- Ampliação das funcionalidades de gerenciamento
-
-### 👩‍💻 Desenvolvedora
-
-Alice Vitória
-
-Estudante de Sistemas de Informação, com interesse em desenvolvimento de software, programação e tecnologia.
-
-Este projeto faz parte da minha jornada de aprendizado e desenvolvimento na área de tecnologia.
-
-⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
+⭐ *Se você gostou deste projeto, considere deixar uma estrela no repositório!*
