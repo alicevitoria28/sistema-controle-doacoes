@@ -1,14 +1,28 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-*.db
-*.sqlite
-*.sqlite3
-
-*.xlsx
-
+# Ambientes virtuais
 .venv/
 venv/
 env/
 
+# Bancos de dados
+*.db
+*.sqlite
+*.sqlite3
+
+# Arquivos Excel
+*.xlsx
+
+# Variáveis de ambiente
 .env
+.env.*
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
