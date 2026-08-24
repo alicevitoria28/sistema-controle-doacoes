@@ -4,7 +4,7 @@ Sistema desktop desenvolvido em Python para gerenciamento e organização de doa
 
 ## 🎯 Sobre o projeto
 
-O Sistema de Controle de Doações é uma aplicação desktop desenvolvida em Python com o objetivo de facilitar o cadastro, organização, consulta e gerenciamento de doações.
+O **Sistema de Controle de Doações** é uma aplicação desktop desenvolvida em Python com o objetivo de facilitar o cadastro, organização, consulta e gerenciamento de doações.
 
 O projeto foi desenvolvido aplicando conceitos de desenvolvimento de software, criação de interfaces gráficas, autenticação de usuários, persistência de dados e manipulação de arquivos.
 
@@ -68,87 +68,115 @@ sistema-controle-doacoes/
 ├── .gitignore               # Arquivos ignorados pelo Git
 ├── screenshots/             # Capturas de tela da aplicação
 └── README.md                # Documentação do projeto
+```
 
 ## ⚙️ Como Executar
 
 ### 📋 Pré-requisitos
+
 Antes de executar o projeto, certifique-se de ter instalado em sua máquina:
+
 - 🐍 Python 3.x
 - 🔧 Git
 
----
-
 ### 🚀 Passo a Passo
 
-1️⃣ **Clone o repositório:**
+**1️⃣ Clone o repositório**
+
+```bash
 git clone https://github.com/alicevitoria28/sistema-controle-doacoes.git
+```
 
-2️⃣ **Acesse a pasta do projeto:**
+**2️⃣ Acesse a pasta do projeto**
+
+```bash
 cd sistema-controle-doacoes
+```
 
-3️⃣ **Crie um ambiente virtual:**
+**3️⃣ Crie um ambiente virtual**
+
+```powershell
 py -m venv .venv
+```
 
-4️⃣ **Ative o ambiente virtual (Windows PowerShell):**
+**4️⃣ Ative o ambiente virtual**
+
+No Windows PowerShell:
+
+```powershell
 .venv\Scripts\activate
-*(Após a ativação, o terminal deverá apresentar (.venv) no início da linha)*
+```
 
-5️⃣ **Instale as dependências:**
+Após a ativação, o terminal deverá apresentar `(.venv)` no início da linha.
+
+**5️⃣ Instale as dependências**
+
+```powershell
 pip install -r requirements.txt
-*(Principais dependências: ttkbootstrap, bcrypt, openpyxl)*
+```
 
-6️⃣ **Execute a aplicação:**
+Principais dependências utilizadas:
+
+- `ttkbootstrap`
+- `bcrypt`
+- `openpyxl`
+
+**6️⃣ Execute a aplicação**
+
+```powershell
 py main.py
-
----
+```
 
 ## 🗄️ Detalhes Arquiteturais
 
 ### 💾 Banco de Dados
-A aplicação utiliza **SQLite** para armazenamento local das informações relacionadas às doações. Os arquivos do banco de dados são ignorados pelo Git via `.gitignore`, evitando que dados locais sejam enviados ao repositório público.
+
+A aplicação utiliza **SQLite** para armazenamento local das informações relacionadas às doações.
+
+Os arquivos do banco de dados são ignorados pelo Git por meio do `.gitignore`, evitando que dados locais sejam enviados ao repositório público.
 
 ### 🔐 Segurança
-O projeto utiliza a biblioteca **bcrypt** para realizar o hash das senhas dos usuários, garantindo que informações confidenciais não sejam armazenadas em texto puro no sistema.
+
+O projeto utiliza a biblioteca **bcrypt** para realizar o hash das senhas dos usuários, evitando o armazenamento de senhas em texto puro.
 
 ### 📊 Exportação de Dados
-O sistema possui a funcionalidade de exportação de relatórios para planilhas em formato Excel, utilizando a biblioteca **OpenPyXL**.
+
+O sistema possui funcionalidade de exportação de informações para planilhas em formato Excel, utilizando a biblioteca **OpenPyXL**.
 
 ### 🎨 Interface Gráfica
-Desenvolvida utilizando **Tkinter** em conjunto com **ttkbootstrap**, a interface oferece componentes visuais modernos, incluindo suporte à alternância de temas visuais (claro/escuro).
 
----
+A interface foi desenvolvida utilizando **Tkinter** em conjunto com **ttkbootstrap**, oferecendo componentes visuais personalizados e suporte à alternância entre temas.
 
 ## 🎓 Objetivos de Aprendizado
 
-Este projeto foi desenvolvido com o objetivo de praticar e consolidar conceitos como:
+Este projeto foi desenvolvido com o objetivo de praticar e consolidar conhecimentos relacionados a:
 
-- 🐍 Programação em Python e POO
+- 🐍 Programação em Python
 - 💻 Desenvolvimento de aplicações desktop
 - 🎨 Criação e estilização de interfaces gráficas
-- 🏗️ Organização de arquitetura de código
+- 🏗️ Organização e estruturação de código
 - 🗄️ Integração e manipulação de banco de dados SQLite
-- 🔐 Autenticação de usuários e criptografia de senhas
+- 🔐 Autenticação de usuários e hash de senhas
 - 📊 Manipulação de arquivos e exportação de dados
-- 📦 Gerenciamento de dependências e ambiente virtual
+- 📦 Gerenciamento de dependências e ambientes virtuais
 - 🔧 Controle de versão com Git e GitHub
-
----
 
 ## 🚧 Próximas Melhorias
 
 - [ ] Implementação de testes automatizados
 - [ ] Melhorias na validação de campos e formulários
-- [ ] Sistema com diferentes níveis de acesso (Admin / Usuário)
+- [ ] Sistema com diferentes níveis de acesso
 - [ ] Relatórios e gráficos analíticos mais completos
 - [ ] Aprimoramentos na experiência do usuário (UX)
 - [ ] Ampliação das funcionalidades de gerenciamento e filtros
 
----
-
 ## 👩‍💻 Desenvolvedora
 
-**Alice Vitória**  
-Estudante de Sistemas de Informação, apaixonada por desenvolvimento de software, programação e tecnologia.
+**Alice Vitória**
+
+Estudante de Sistemas de Informação, com interesse em desenvolvimento de software, programação e tecnologia.
+
+Este projeto faz parte da minha jornada de aprendizado e desenvolvimento na área de tecnologia.
 
 ---
 
